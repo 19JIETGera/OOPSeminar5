@@ -57,6 +57,16 @@ public class DataService {
         return userList;
     }
 
+    public User getAllTeacher(){
+        User result = null;
+        for (User user: userList) {
+            if (user instanceof Teacher){
+                result = user;
+            }
+        }
+        return result;
+    }
+
     public List<User> getAllStudent(){
         List<User> resultList = new ArrayList<>();
         for(User user : userList){

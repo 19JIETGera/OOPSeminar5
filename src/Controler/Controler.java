@@ -14,7 +14,7 @@ public class Controler {
     public void createSudentGroup (List<User> students, User teacher){
         groupService.createStudentGroups(students,teacher);
     }
-    public List<StudentGroup> getStudentGroup (){
+    public StudentGroup getStudentGroup (){
         return groupService.getStudentGroups();
     }
 

@@ -9,14 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentGroupService {
-    private List<StudentGroup> studentGroups;
+    private StudentGroup studentGroups;
 
 
     public void createStudentGroups (List<User> students, User teacher){
-        this.studentGroups = (List<StudentGroup>) new StudentGroup(students,teacher);
+        this.studentGroups = new StudentGroup(students,teacher);
     }
 
-    public List<StudentGroup> getStudentGroups() {
+    public StudentGroup getStudentGroups() {
         return studentGroups;
     }
 }
