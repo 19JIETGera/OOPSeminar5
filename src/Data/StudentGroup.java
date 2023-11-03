@@ -3,27 +3,27 @@ package Data;
 import java.util.List;
 
 public class StudentGroup {
-    private List<Student> student;
-    private Teacher teacher;
+    private List<User> student;
+    private User teacher;
 
-    public StudentGroup(List<Student> student, Teacher teacher) {
+    public StudentGroup(List<User> student, User teacher) {
         this.student = student;
         this.teacher = teacher;
     }
 
-    public List<Student> getStudent() {
+    public List<User> getStudent() {
         return student;
     }
 
-    public void setStudent(List<Student> student) {
+    public void setStudent(List<User> student) {
         this.student = student;
     }
 
-    public Teacher getTeacher() {
+    public User getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
+    public void setTeacher(User teacher) {
         this.teacher = teacher;
     }
 
